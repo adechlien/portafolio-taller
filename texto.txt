@@ -1,0 +1,3 @@
+De primero, quiero comenzar explicando un concepto muy importante
+
+Entre mejor le dejes las cosas claras al Navegador, acerca de como esta compuesta tu pagina, mas facil la tiene dicho navegador para posicionarla.
