@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandro's Portfolio</title>
+    <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b69f5d989.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <!-- Header -->
@@ -28,6 +30,7 @@
         </div>
         <img class="my-photo" src="images/foto.png" alt="Me">
     </section>
+    <!-- About section -->
     <section class="about-section">
         <img src="images/foto.png" alt="Me">
         <div class="about-description">
@@ -40,6 +43,7 @@
             </a>
         </div>
     </section>
+    <!-- Skills section -->
     <section class="skills-section">
         <h2>Skills</h2>
         <div class="skills-container">
@@ -61,30 +65,38 @@
             </div>
         </div>     
     </section>
+    <!-- Projects section -->
     <section class="projects-section">
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project">
                 <img src="images/project.png" alt="HTML">
-                <p>Project 1</p>
+                <a href="">
+                    <p>Project 1</p>
+                </a>
             </div>
             <div class="project">
                 <img src="images/project.png" alt="HTML">
-                <p>Project 2</p>
+                <a href="">
+                    <p>Project 2</p>
+                </a>
             </div>
             <div class="project">
                 <img src="images/project.png" alt="HTML">
-                <p>Project 3</p>
+                <a href="">
+                    <p>Project 3</p>
+                </a>
             </div>
         </div>
     </section>
+    <!-- Contact section -->
     <footer>
         <p>© 2023 Adechlien</p>
         <div class="links">
-            <a href="">
+            <a class="d" title="Instagram" href="https://www.instagram.com/adechlien/">
                 <i class="fa-brands fa-square-instagram"></i>
             </a>
-            <a href="">
+            <a href="https://twitter.com/" title="Twitter">
                 <i class="fa-brands fa-square-x-twitter"></i>
             </a>
             <a href="">
@@ -92,5 +104,6 @@
             </a>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
