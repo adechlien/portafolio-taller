@@ -6,37 +6,47 @@
     <title>Alejandro's Portfolio</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b69f5d989.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <p>My Portfolio</p>
+        <a href="#home" class="title">Alejandro's Portfolio</a>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a class="change-theme" onclick="changeTheme()">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </a>
+        </div>
     </header>
     <!-- Hero section -->
-    <section class="hero-section">
+    <section id="home" class="hero-section">
+        <img src="images/foto.png" alt="Me">
         <div class="hero-description">
             <p>Hello!</p>
             <h2>I'm Alejandro Hernández</h2>
             <p>Web Designer and Developer</p>
-            <a class="link-cv" href="images/my-cv.pdf" download>
+            <a class="link-cv" href="images/pdf-template.pdf" download>
                 Download CV
             </a>
         </div>
-        <img class="my-photo" src="images/foto.png" alt="Me">
     </section>
     <!-- About section -->
-    <section class="about-section">
+    <section id="about" class="about-section">
         <img src="images/foto.png" alt="Me">
         <div class="about-description">
             <h2>About me</h2>
             <p>
-                Hello! I'm Alejandro Hernández, a passionate web developer with a creative mindset and a strong love for coding. I specialize in crafting beautifully designed, user-friendly websites and web applications. I'm dedicated to staying up-to-date with the latest web technologies and trends, ensuring that my projects are not only functional but also cutting-edge. When I'm not coding, you can find me exploring new technologies, collaborating with fellow developers, or enjoying a good cup of coffee. Let's work together to bring your digital ideas to life!
+                Hi, I'm Alejandro Hernández, a web developer focused on making websites and apps easy to use. I love coding and keeping up with new web tech. I design sleek digital experiences that work well and look great.
+            </p>
+            <p>
+                When I'm not coding, I like trying new tech, working with other developers, and having coffee. Let's work together on your digital projects!
             </p>
             <a class="link-repo" href="https://github.com/YourFriendlyADC" target="_blank" rel="noopener">
                 Repositories
@@ -44,7 +54,7 @@
         </div>
     </section>
     <!-- Skills section -->
-    <section class="skills-section">
+    <section id="skills" class="skills-section">
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill">
@@ -59,31 +69,31 @@
                 <img src="images/javascript-logo.png" alt="JavaScript">
                 <p>JavaScript</p>
             </div>
-            <div class="skill">
+            <!-- <div class="skill">
                 <img src="images/git-logo.png" alt="Git">
                 <p>Git</p>
-            </div>
+            </div> -->
         </div>     
     </section>
     <!-- Projects section -->
-    <section class="projects-section">
+    <section id="projects" class="projects-section">
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project">
-                <img src="images/project.png" alt="HTML">
                 <a href="">
+                <img src="images/project.png" alt="Project">
                     <p>Project 1</p>
                 </a>
             </div>
             <div class="project">
-                <img src="images/project.png" alt="HTML">
                 <a href="">
+                    <img src="images/project.png" alt="Project">
                     <p>Project 2</p>
                 </a>
             </div>
             <div class="project">
-                <img src="images/project.png" alt="HTML">
                 <a href="">
+                    <img src="images/project.png" alt="Project">
                     <p>Project 3</p>
                 </a>
             </div>
@@ -93,7 +103,7 @@
     <footer>
         <p>© 2024 Alejandro Hernández Polo</p>
         <div class="links">
-            <a class="d" title="Instagram" href="https://www.instagram.com/adechlien/">
+            <a class="d" title="Instagram" href="https://www.instagram.com/yourfriendlyadc/">
                 <i class="fa-brands fa-square-instagram"></i>
             </a>
             <a href="https://twitter.com/" title="Twitter">

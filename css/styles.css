@@ -9,17 +9,17 @@ body {
   background-color: #dde3f1;
 }
 
-p {
+/* p {
   color: #4068c4;
   display: flex;
-}
+} */
 
 a {
   text-decoration: none;
   text-align: center;
   background-color: transparent;
   margin: 1rem 0;
-  padding: 10px;
+  padding: .75rem;
   cursor: pointer;
   font-size: 1em;
   font-weight: 500;
@@ -36,12 +36,17 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2em;
+  padding: .75rem 1.2em;
   background-color: #dde3f1;
   font-weight: 600;
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+header a {
+  color: #224086;
+  margin: 0;
 }
 
 /* Hero-Section */
@@ -56,9 +61,13 @@ header {
 
 .hero-section img {
   width: 15rem;
+  border: .25em solid #3e63b8;
+  box-shadow: #557ddc -.75em .5em .125rem;
+  border-radius: 100%;
 }
 
 .hero-description {
+  color: #224086;
   font-size: 1em;
   display: flex;
   flex-direction: column;
@@ -66,27 +75,15 @@ header {
 }
 
 .link-cv {
-  color: #4068c4;
-  border: 3px solid #4068c4;
-  border-radius: 5px;
+  background-color: #4068c4;
+  color: #dde3f1;
+  border-radius: 2rem;
   width: 60%;
   transition: all .3s ease;
 }
 
-.link-cv:hover {
-  background-color: #4068c4;
-  color: #dde3f1;
-  transition: all .3s ease;
-}
-
-.my-photo {
-  border-radius: 50%;
-  border: .25rem solid #4068c4;
-}
-
 /* About Me */
 .about-section {
-  background-color: #7498ee;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -97,28 +94,24 @@ header {
 
 .about-section img {
   width: 12rem;
-  border: .25em solid #224086;
-  border-radius: .25em;
-  box-shadow: #4068c4 -.5em .5em 0;
+  border: .25em solid #3e63b8;
+  box-shadow: #557ddc -.75em .5em 0;
+  border-radius: 50em;
 }
 
 .about-description {
+  color: #224086;
   display: flex;
   flex-direction: column;
   width: 40%;
   gap: 1em;
 }
 
-.about-description h2,
-.about-description p {
-  color: #dde3f1;
-}
-
 .about-section .link-repo {
   display: inline-block;
   color: #dde3f1;
   background-color: #4068c4;
-  border-radius: 5px;
+  border-radius: 2rem;
   /* width: 30%; */
   font-weight: bold;
 }
@@ -156,6 +149,14 @@ header {
 .skills-section .skill p,
 .projects-section .project p {
   font-weight: 900;
+  color: #224086;
+}
+
+.projects-section .project a {
+  display: flex;
+  flex-direction: column;
+  gap: .75em;
+  margin: 0;
 }
 
 .skills-section .skill img,
@@ -187,11 +188,20 @@ footer .links {
 footer a {
   color: #dde3f1;
   font-size: 1.4em;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+  
+  header .title {
+    display: none;
+  }
+
   .hero-section {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2em;
     height: 90vh;
   }
@@ -220,7 +230,7 @@ footer a {
 
   .skills-section .skills-container,
   .projects-section .projects-container {
-    gap: 2em;
+    gap: 1em;
     flex-wrap: wrap;
   }
 
@@ -231,11 +241,14 @@ footer a {
 
   footer {
     padding: .5rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   footer a {
     margin: 0;
   }
-  
+
+  footer p {
+    margin-bottom: .5rem;
+  }
 }
