@@ -1,2 +1,2 @@
-# portafolio-taller
-## project created to be taught
+# Taller de Desarrollo Web - Frontend
+### Link to portfolio: https://taller-adc.netlify.app
